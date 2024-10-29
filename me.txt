@@ -1,0 +1,29 @@
+dark/light
+https://www.youtube.com/watch?v=q66DbMVx6O8
+#################
+This repository uses nuxtjs and dark/light mode
+tailwindcss
+responsive 
+
+dev: npm run dev
+build: npm run build
+
+under production:
+module.exports = {
+  apps: [
+    {
+      name: 'nuxtwts',
+      exec_mode: 'cluster',
+      instances: 'max',
+      script: './.output/server/index.mjs',
+      env: {
+        NODE_ENV: 'production',
+        HOST: '127.0.0.1',
+        PORT: '3007'
+      },
+    },
+  ],
+};
+create a file at root called : ecosystem.config.js
+Then do just pm2 start and then, pm2 save
+Ensure ufw allows 3007 port

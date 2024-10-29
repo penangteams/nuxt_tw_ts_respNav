@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "start": "node .output/server/index.mjs"
+  },
+  "devDependencies": {
+    "@types/uuid": "^9.0.0",
+    "@types/ws": "^8.5.4",
+    "autoprefixer": "^10.4.13",
+    "nuxt": "latest",
+    "postcss": "latest",
+    "tailwindcss": "latest"
+
+  },
+  "dependencies": {
+    "@headlessui/vue": "^1.7.7",
+    "@heroicons/vue": "^2.0.13",
+    "jiti": "^1.16.1",
+    "uuid": "^9.0.0",
+    "ws": "^8.12.0"
+  }
+}
